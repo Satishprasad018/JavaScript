@@ -38,3 +38,26 @@ const func = function () {
 console.log(typeof arr); //object
 console.log(typeof obj); //object
 console.log(typeof func); //function
+
+// ********************************************************************************************************* //
+ 
+// Stack(primitive)              Heap(non primitive)
+
+let firstNumber = "satish"
+let secondNumber = firstNumber
+secondNumber = "Prashant"
+
+console.log(firstNumber);
+console.log(secondNumber);
+
+let userOne ={
+    email : "satish.prasad.018@gmail.com",
+    uname : "ujhwernuj"
+}
+
+let userTwo = userOne 
+
+userTwo.email = "prasadsatish333@gmail.com"
+
+console.log(userTwo.email);
+console.log(userOne.email);
