@@ -14,7 +14,7 @@ for (const i in string1) {
     // console.log(string1[i]);
 }
 
-// for in loop in objects ---------------->  objects is not iterable 
+// for in loop in objects ---------------->  objects is iterable 
 
 const mySym = Symbol("key1")
 

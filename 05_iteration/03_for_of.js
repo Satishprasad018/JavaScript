@@ -3,10 +3,10 @@
 const arr1 = [1,2,3,4,5,6,7,8,9]          
 
 for (const i of arr1) {
-    console.log(`array element are ${i}`);
+    // console.log(`array element are ${i}`);
 }
 
-// fro of loop in strings
+// for of loop in strings
 const string1 = "satish prasad"
 
 for (const i of string1) {
