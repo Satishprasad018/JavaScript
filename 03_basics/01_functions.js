@@ -9,24 +9,19 @@ function sayMyName(){
 
 // sayMyName()
 
-// function addTwoNumbers(number1, number2){
-
-//     console.log(number1 + number2);
-// }
+function addTwoNumbers(number1, number2){
+    console.log(number1 + number2);
+}
 
 function addTwoNumbers(number1, number2){
-
-    // let result = number1 + number2
-    // return result
     return number1 + number2
 }
 
 const result = addTwoNumbers(3, 5)
+console.log("Result: ", result);                        // Result:  8
 
-// console.log("Result: ", result);
 
-
-function loginUserMessage(username = "sam"){
+function loginUserMessage(username = "sam"){            // function with default parameter
     if(!username){
         console.log("PLease enter a username");
         return
@@ -34,40 +29,40 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
+console.log(loginUserMessage("hitesh"))                  // hitesh just logged in
+console.log(loginUserMessage())                          // sam just logged in
 
 
-// function calculateCartPrice(...num1){      // rest operator
-//    return num1 ;
-// }
+function calculateCartPrice(...num1){                    // rest operator
+   return num1 ;
+}
 
-// console.log(calculateCartPrice(348,484,4,84,48,4,848));  // [348,484,4,84,48,4,848]
+console.log(calculateCartPrice(348,484,4,84,48,4,848));  // num1 = [348,484,4,84,48,4,848]
 
 function calculateCartPrice2(val1, val2, ...num1) {      // rest operator
     return num1;
 }
 
-// console.log(calculateCartPrice2(348, 484, 4, 84, 48, 4));  // [4,84,48,4]
+console.log(calculateCartPrice2(348, 484, 4, 84, 48, 4));  // val1 = 348 , val2 =484 num1 = [4,84,48,4]
 
 const user = {
     username: "satish",
     price: 8848
 };
 
-function handleObject(anyobject) {
+function konsa_bhiObject(anyobject) {
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
-
-handleObject(user);    //    handleObject({
-                      //          username: "sam",
-                     //          price: 399
-                    //       })
+ 
+konsa_bhiObject(user);    //    handleObject({
+                         //          username: "sam",
+                         //          price: 399
+                         //       })
 
 const myASrray = [348, 484, 4, 84, 48, 4, 848]
 
 function returnValue(anyarray) {
-    return anyarray[3];
+    return anyarray; 
 }
 
-console.log(returnValue(myASrray));  //  console.log(returnValue([348, 484, 4, 84, 48, 4, 848]));
+console.log(returnValue(myASrray));    //  [348, 484, 4, 84, 48, 4, 848]
